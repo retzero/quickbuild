@@ -5,7 +5,7 @@ MAINTAINER Hyokeun Jeon <hyokeun@gmail.com>
 RUN apt-get update && \
     apt-get install -y wget 
 
-RUN wget https://www.pmease.com/artifacts/5309/quickbuild-11.0.2.tar.gz && \
+RUN wget -q https://www.pmease.com/artifacts/5309/quickbuild-11.0.2.tar.gz && \
     tar -zxvf quickbuild-11.0.2.tar.gz -C /opt 
 
 EXPOSE 8810
