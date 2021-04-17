@@ -10,6 +10,7 @@ jobs:
      - run:
          name: Build docker image
          command: |
+           docker login -u $DOCKER_LOGIN_ID -p $DOCKER_LOGIN_PASSWORD
            docker build --pull -t ${CIRCLE_USERNAME}/quickbuild-11.0.2:latest .
      - run:
          name: Tagging
