@@ -10,4 +10,4 @@ RUN wget -q https://www.pmease.com/artifacts/5309/quickbuild-11.0.2.tar.gz && \
 
 EXPOSE 8810
 
-ENTRYPOINT /opt/quickbuild-6.0.9/bin/server.sh console
+ENTRYPOINT /opt/quickbuild-11.0.2/bin/server.sh console
